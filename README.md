@@ -11,7 +11,7 @@ You should install ICLI
 
 ```
 npm i discord.js
-npm i ice-command-line-interface
+npm i -g ice-command-line-interface
 ```
 
 Open a new command prompt and use the following command
