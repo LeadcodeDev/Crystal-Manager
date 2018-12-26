@@ -1,0 +1,29 @@
+{
+  "name": "ice-command-line-interface",
+  "version": "1.0.4",
+  "description": "Ice Command Line Interface is a new method to easily create a new bot discord. Indeed, ICLI allows you to import a healthy development database so that you can easily create your bot discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "ICLI",
+    "discord",
+    "CLI",
+    "template"
+  ],
+  "author": "freeze_dev",
+  "license": "ISC",
+  "bin": {
+    "ice": "bin/index.js"
+  },
+  "engines": {},
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "shelljs": "^0.8.3"
+  }
+}
