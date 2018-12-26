@@ -10,7 +10,8 @@ To use the Ice Command Line Interface, you must have Node on your computer
 You should install ICLI
 
 ```
-npm install -g ICLI
+npm i discord.js
+npm i ice-command-line-interface
 ```
 
 Open a new command prompt and use the following command
@@ -21,6 +22,7 @@ ice new <your project name>
 
 > Note : There should be no space in the project name, privilege underscores
 
+Exemple
 ```
 ice new my_project
 ```
