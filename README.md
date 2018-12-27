@@ -17,15 +17,18 @@ npm i -g ice-command-line-interface
 Open a new command prompt and use the following command
 
 ```
-ice new <your project name>
+ice make:project <your project name>
 ```
 
 > Note : There should be no space in the project name, privilege underscores
 
-Exemple
-```
-ice new my_project
-```
+
+### Commands
+First Header | Second Header
+------------ | -------------
+ice make:project <project_name> | Creat a new project
+ice make:command <command_name> // without extension| Create a new command
+
 
 ## Built With
 
