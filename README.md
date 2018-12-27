@@ -27,7 +27,7 @@ ice make:project <your project name>
 First Header | Second Header
 ------------ | -------------
 ice make:project <project_name> | Creat a new project
-ice make:command <command_name> // without extension| Create a new command
+ice make:command <command_name> | Create a new command. Don't write the extension
 
 
 ## Built With
