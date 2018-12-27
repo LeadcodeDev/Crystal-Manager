@@ -1,33 +1,54 @@
 #! /usr/bin/env node
 const shell = require("shelljs")
 const chalk = require('chalk')
+const fs = require('fs')
 const args = process.argv.slice(2)
 
 console.clear()
 
-setTimeout(() => {console.log(`${chalk.cyan("<=== ICE COMMAND LINE INTERFACE ===>")}`)}, 1000)
+if (args[0])
+{
+    let execType = args[0].split(':')
 
-setTimeout(() => {
-    if (args[0])
+    if (execType[0] === "make")
     {
-        if (args[1])
+        switch (execType[1])
         {
-            switch (args[0])
-            {
-                case "new":
-                    setTimeout(() => {console.log(`\n${chalk.bgMagenta(`Téléchargement du model : ${args[1]} `)}`)}, 1000)
+            case "project":
+                if (args[1])
+                {
+                    console.log(`${chalk.bgMagenta(`Project creation :`)} ${chalk.magenta(args[1])}`)
                     shell.exec(`git clone https://github.com/Freeze455/Discord-Bot-Template.git ${args[1]}`)
-                break    
-            }
-            setTimeout(() => {console.log(`\n${chalk.yellow("SUCCES : Téléchargement du model")}`)}, 3000)
-        }
-        else
-        {
-            console.log(`\n${chalk.redBright("ERROR : Please specify a name for the project")}`)
+                    console.log(`${chalk.yellow("SUCCES : Project creation successfully")}`)
+                }
+                else
+                {
+                    console.log("ERROR : Please specify a name for the project")
+                }
+            break
+
+            case "command":
+                console.log("Creating the command file")
+                let contentFile = 
+                    'exports.run = (client, message, args) => {\n\n' +
+                    '    // Your code\n\n' +
+                    '}'
+                    
+                fs.writeFileSync(`commands/${args[1]}.js`, contentFile, "UTF-8")
+                console.log(`${chalk.yellow("SUCCES : Creating the command file successfully")}`)
+            break
+
+            default:
+                console.log(`${chalk.redBright('\nERROR : Please select a true option "ice make:[project | command] <name>"')}`)
+            break
         }
     }
     else
     {
-        console.log(`\n${chalk.redBright("ERROR : Please select a \"new\" option <ice new project_name>")}`)
+        console.log(`${chalk.redBright('ERROR : Please select "make" option "ice make:[project | command] <name>"')}`)
     }
-}, 1000)
+}
+else
+{
+    console.log(`${chalk.redBright(`ERROR : Invalid usage.\nPlease select an option "ice make:[project | command] <name>"`)}`)
+}
