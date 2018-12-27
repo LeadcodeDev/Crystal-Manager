@@ -18,7 +18,7 @@ if (args[0])
                 if (args[1])
                 {
                     console.log(`${chalk.bgMagenta(`Project creation :`)} ${chalk.magenta(args[1])}`)
-                    shell.exec(`git clone https://github.com/Freeze455/Discord-Bot-Template.git ${args[1]}`)
+                    shell.exec(`git clone https://github.com/Freeze455/Discord-Bot-Template.git ${args[1]} && cd ${args[1]} && git remote remove origin`)
                     console.log(`${chalk.yellow("SUCCES : Project creation successfully")}`)
                 }
                 else
