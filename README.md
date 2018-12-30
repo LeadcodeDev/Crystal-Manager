@@ -37,7 +37,7 @@ ice make:command <command_name> | Create a new command. Don't write the extensio
 
 ## Authors
 
-* **Freeze** - *Initial work* - [read more](https://github.com/PurpleBooth)
+* **Freeze** - *Initial work* - [read more](https://github.com/Freeze455)
 
 ## License
 
