@@ -1,6 +1,6 @@
 {
   "name": "crystal-manager",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Crystal Manager is a new method to easily create a new bot discord. Indeed, crystal-manager allows you to import a healthy development database so that you can easily create your bot discord.",
   "main": "index.js",
   "scripts": {

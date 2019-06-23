@@ -46,8 +46,6 @@ if (execType[0] == "make") {
                                         console.log(`- ${commands[i].split(".")[0]} (100%)`)
                                         
                                         if (i == commands.length -1) {
-                                            let targetFolder = __dirname.split('\\')
-                                            console.log(`\nYour download location is "${targetFolder.slice(0, targetFolder.length -2).join("/")}/${args[1]}"\n`)
                                             console.log(`${chalk.green("\nSUCCES : Project creation successfully\n")}`)
                                         }
                                     }, i * 50)           
