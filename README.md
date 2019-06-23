@@ -1,6 +1,6 @@
 # Crystal Manager
 
-[![npm](https://img.shields.io/badge/NPM 6.4.1-a5001e.svg)](https://sass-lang.com/)
+[![npm](https://img.shields.io/badge/NPM-6.4.1-a5001e.svg)](https://www.npmjs.com/package/crystal-manager)
 Ice Command Line Interface is a new method to easily create a new bot discord. Indeed, ICLI allows you to import a healthy development database so that you can easily create your bot discord.
 
 ### Prerequisites
